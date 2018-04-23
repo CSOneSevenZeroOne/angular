@@ -7,12 +7,15 @@ import { Component } from '@angular/core';
 export class SearchComponent {
   title = 'app';
   bool = false;
-  name = "abc";
+  inputsearch = "asdasdasd";
   
   showSearchInput(){
   	this.bool = !this.bool
   }
   hideSearchInput(){
   	this.bool = !this.bool
+  }
+  searchClear(){
+  	this.inputsearch = ""
   }
 }
