@@ -9,7 +9,7 @@ import { DataService } from '../../services/app.service';
   styleUrls: ['./app.loading.css']
 })
 export class LoadingComponent {
-	constructor(private dataService: DataService) {} //(3)步骤3
+	constructor(public dataService: DataService) {} //(3)步骤3
 	//Model
   title = '天天头条';
 }

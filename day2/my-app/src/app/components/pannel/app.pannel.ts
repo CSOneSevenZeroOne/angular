@@ -41,7 +41,7 @@ export class PannelComponent {
 				this.page++;
 			});
 	}
-	constructor(private http: Http, private dataService: DataService) {} //(3)步骤3
+	constructor(private http: Http, public dataService: DataService) {} //(3)步骤3
 	//生命周期  mounted
 	ngOnInit() {
 		this.loadMore();
